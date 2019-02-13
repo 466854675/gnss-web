@@ -2,8 +2,8 @@ server:
   port: 8090
 
 gnss:
-  middleware-ip: 193.112.59.171
-  public-ip: 192.168.31.102
+  middleware-ip: 127.0.0.1
+  public-ip: 127.0.0.1
 
 spring:
   redis:
