@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: gnss-web
+  profiles:
+    active: test
+
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+server:
+  servlet:
+    context-path: /gnss-admin
+
+gnss:
+  token:
+    #JWT超时时间7200000毫秒
+    timeout: 7200000000000
+
+swagger:
+  enabled: true
+  title: 北斗/GPS物联网监控平台
+  description: GNSS Web
+  version: 1.0.1.RELEASE
+  contact:
+    name: 梦幻
+    url: http://www.gps-pro.cn
+    wechat: 17158638841
+  docket:
+    command:
+      title: 指令操作
+      basePackage: com.gnss.web.command
+    baseinfo:
+      title: 基础信息
+      basePackage: com.gnss.web.baseinfo

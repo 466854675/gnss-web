@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+gnss:
+  middleware-ip: localhost
+  public-ip: 127.0.0.1
+
+spring:
+  redis:
+    host: ${gnss.middleware-ip}
+    port: 6379
+    password: gps-pro@cn
+
+  rabbitmq:
+    host: ${gnss.middleware-ip}
+    port: 5672
+    username: guest
+    password: guest
